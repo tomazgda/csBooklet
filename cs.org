@@ -134,6 +134,8 @@ for week in range(1,26):
 
 ** TODO Quiz.py
 
+*** Example
+
 #+begin_src python
 
 print("Welcome to my Quiz")
@@ -148,6 +150,31 @@ if answer==128:
 else:
     print("No!")
 
+#+end_src
 
+*** TODO Functions (W.I.P)
+
+#+begin_src python
+
+print("Welcome to my Quiz")
+
+def quiz(question_number):
+    print("Question number", question_number)
+
+def qOne():
+    score = 0
+    quiz(1)
+    print("What is 2**7?")
+    answer=int(input())
+    if answer==128:
+        print("Yes!!")
+        score=score+1
+    else:
+        print("No!")
+
+def gameStart():
+    qOne()
+
+gameStart()
 
 #+end_src
