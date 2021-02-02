@@ -8,16 +8,18 @@
 :END:
 ** Hello World
 
+Prints hello world to the screen.
+
 #+begin_src python
 
 print("Hello, world!")
 
 #+end_src
 
-#+RESULTS:
-: Hello, world!
-
 ** Exercise 11
+
+Asks user to enter name, records user input, prints that input (name).
+
 #+begin_src python
 
 print('enter your name')
