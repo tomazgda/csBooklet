@@ -155,23 +155,43 @@ else:
 #+begin_src python
 
 print("Welcome to my Quiz")
-
+score = 0
 def quiz(question_number):
+    for i in range(3):
+      print("-")
     print("Question number", question_number)
 
 def qOne():
-    score = 0
+    global score
     quiz(1)
     print("What is 2**7?")
     answer=int(input())
     if answer==128:
         print("Yes!!")
-        score=score+1
+        score = score + 1
     else:
         print("No!")
 
+def qTwo():
+  global score
+  quiz(2)
+  print("What is 5*5?")
+  answer=int(input())
+  if answer==25:
+    print("Yes")
+    score = score + 1
+  else:
+    print("No")
+
+def qThree():
+  global score
+  quiz(3)
+
+
 def gameStart():
     qOne()
+    qTwo()
+    qThree()
 
 gameStart()
 
