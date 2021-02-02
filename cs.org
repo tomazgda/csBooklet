@@ -1,0 +1,153 @@
+#+TITLE: Cs
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="org.css" />
+
+
+* Python
+:PROPERTIES:
+ :header-args:  :results output
+:END:
+** Hello World
+
+#+begin_src python
+
+print("Hello, world!")
+
+#+end_src
+
+#+RESULTS:
+: Hello, world!
+
+** Exercise 11
+#+begin_src python
+
+print('enter your name')
+name = input()
+print(name)
+
+#+end_src
+
+#+RESULTS:
+
+** Exercise 12
+
+1. The issue with this program is that the user can input any value that is not 'Yes' and sill get the message stating they will get wet.
+2. "If it rains, you will stay dry"
+3. [Discussed in question. 1]
+
+** Exercise 13
+
+1. "you are a woman"
+2. "you are not allowed in the sixth form cafe"
+3. "incorrect password"
+
+** Exercise 14
+
+#+begin_src python
+
+print("what is your name?")
+name = input(
+if name == "Tom":
+    print("hello Tom")
+else:
+    print("Where is Tom?")
+
+#+end_src
+#+begin_src python
+
+print("do you like hot weather?")
+ans = input()
+if ans == "Yes":
+    print("go to the beach")
+else:
+    print("Go somewhere cool on holiday... Like Finland.")
+
+#+end_src
+#+begin_src python
+
+print("do you like milk?")
+ans = input()
+if ans == "Yes":
+    print("That is great, it is a good source of calcium")
+else:
+    print()
+
+#+end_src
+#+begin_src python
+
+print("how old are you?")
+ans = input()
+if ans >= 14:
+    print("you are doing GCSEs")
+elif ans < 14:
+    print("you are not doing GCSEs")
+    print("do you enjoy creative subjects?")
+    ans2 = input()
+    if ans2 == "Yes":
+        print("Maybe you should think about Art or Music?")
+    else:
+        print("Maybe you should think about Computing?")
+
+#+end_src
+
+** Exercise 24
+#+begin_src python
+
+print("enter an end value")
+end = int(input())
+
+for counter in range (0,end):
+    print(counter)
+
+#+end_src
+
+It will ask the user to enter a value. It will then print every number between 0 (including 0) and 1 less than that number.
+
+** Exercise 25 Times tables
+
+#+begin_src python
+
+print("enter an end value")
+num = int(input())
+print("enter how many times tables do you wish for?")
+max_count = int(input())
+count = 0
+
+for counter in range (0,max_count):
+    print(count, "times", num, "is", (count * num))
+    count += 1
+
+#+end_src
+
+
+** Exercise 26
+#+begin_src python
+pocketMoney = 0.01
+for week in range(10):
+    print("It is week ",week)
+    print("You will get £ ",pocketMoney)
+#+end_src
+
+#+begin_src python
+for week in range(1,26):
+#+end_src
+
+
+** Quiz.py
+
+#+begin_src python
+
+print("Welcome to my Quiz")
+score = 0
+
+questNum=1
+print("Question number",questNum)
+answer=int(input("What is 2**7? "))
+if answer==128:
+    print("Yes!!")
+    score=score+1
+else:
+    print("No!")
+
+
+
+#+end_src
