@@ -1,12 +1,8 @@
 #+TITLE: Cs
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="org.css" />
+#+PROPERTY: header-args :results output
 
-
-* Python
-:PROPERTIES:
- :header-args:  :results output
-:END:
-** Hello World
+* Hello World
 
 Prints hello world to the screen.
 
@@ -16,7 +12,7 @@ print("Hello, world!")
 
 #+end_src
 
-** Exercise 11
+* Exercise 11
 
 Asks user to enter name, records user input, prints that input (name).
 
@@ -30,19 +26,19 @@ print(name)
 
 #+RESULTS:
 
-** Exercise 12
+* Exercise 12
 
 1. The issue with this program is that the user can input any value that is not 'Yes' and sill get the message stating they will get wet.
 2. "If it rains, you will stay dry"
 3. [Discussed in question. 1]
 
-** Exercise 13
+* Exercise 13
 
 1. "you are a woman"
 2. "you are not allowed in the sixth form cafe"
 3. "incorrect password"
 
-** Exercise 14
+* Exercise 14
 
 #+begin_src python
 
@@ -91,7 +87,7 @@ elif ans < 14:
 
 #+end_src
 
-** Exercise 24
+* Exercise 24
 #+begin_src python
 
 print("enter an end value")
@@ -104,7 +100,7 @@ for counter in range (0,end):
 
 It will ask the user to enter a value. It will then print every number between 0 (including 0) and 1 less than that number.
 
-** Exercise 25 Times tables
+* Exercise 25 Times tables
 
 #+begin_src python
 
@@ -121,7 +117,7 @@ for counter in range (0,max_count):
 #+end_src
 
 
-** Exercise 26
+* Exercise 26
 #+begin_src python
 pocketMoney = 0.01
 for week in range(10):
@@ -134,7 +130,7 @@ for week in range(1,26):
 #+end_src
 
 
-** TODO Quiz.py
+* TODO Quiz.py
 
 *** Example
 
