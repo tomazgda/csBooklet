@@ -1,6 +1,7 @@
 #+TITLE: Cs
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="org.css" />
 #+PROPERTY: header-args :results output
+#+OPTIONS: num:nil
 
 * Hello World
 
