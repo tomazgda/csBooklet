@@ -75,7 +75,7 @@ else:
 #+begin_src python
 
 print("how old are you?")
-ans = input()
+ans = int(input())
 if ans >= 14:
     print("you are doing GCSEs")
 elif ans < 14:
