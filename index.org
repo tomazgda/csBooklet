@@ -130,6 +130,48 @@ for week in range(10):
 for week in range(1,26):
 #+end_src
 
+* Exercise 27
+
+Asks the user to enter a password until it matches "thepassword".
+
+#+begin_src python
+print(“Enter your password”)
+password = input()
+while password != “thepassword”:
+    print(“incorrect password, try again”)
+    password = input()
+#+end_src
+#+RESULTS:
+
+A while loops executes the instruction within the loop until a requirement is met.
+
+* Exercise 28
+
+#+begin_src python
+
+print ("enter your name")
+name = input ()
+while name != "Tomaz":
+    print("wrong name try again")
+name = input()
+
+#+end_src
+
+#+begin_src python
+
+totalValue = 0
+newValue = 0
+while totalValue < 100:
+    print ("how much are you putting in your piggy bank?”)
+    newValue = int(input())
+    totalValue = totalValue+newValue
+    newValue = 0
+    print (totalValue)
+
+#+end_src
+
+#+RESULTS:
+
 
 * TODO Quiz.py
 
