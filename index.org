@@ -117,7 +117,6 @@ for counter in range (0,max_count):
 
 #+end_src
 
-
 * Exercise 26
 #+begin_src python
 pocketMoney = 0.01
@@ -169,9 +168,6 @@ while totalValue < 100:
     print (totalValue)
 
 #+end_src
-
-#+RESULTS:
-
 
 * TODO Quiz.py
 
@@ -237,5 +233,57 @@ def gameStart():
     qThree()
 
 gameStart()
+
+#+end_src
+
+
+* Rock Paper Scissors Game
+#+begin_src python
+
+import random
+
+usrScore = 0
+comScore = 0
+GameEnd = False
+
+choices = ["R", "P", "S"]
+
+while GameEnd == False:
+
+  if comScore >= 5:
+   print("com win")
+   GameEnd = True
+  elif usrScore >= 5:
+   print("usr win")
+   GameEnd = True
+  else:
+    usrInput = input("Rock, Paper, Scissors : R, P, S")
+    comInput = random.choice(choices)
+    print(comInput)
+    if usrInput == "R" and comInput == "R":
+      print("draw")
+    elif usrInput == "R" and comInput == "P":
+      print("player loose")
+      comScore += 1
+    elif usrInput == "R" and comInput == "S":
+      print("player win")
+      usrScore += 1
+    elif usrInput == "P" and comInput == "R":
+      print("player win")
+      usrScore += 1
+    elif usrInput == "P" and comInput == "P":
+      print("draw")
+    elif usrInput == "P" and comInput == "S":
+      print("player loose")
+      comScore += 1
+    elif usrInput == "S" and comInput == "R":
+      print("player loose")
+      comScore += 1
+    elif usrInput == "S" and comInput == "P":
+      print("player win")
+      usrScore += 1
+    elif usrInput == "S" and comInput == "S":
+      print("draw")
+
 
 #+end_src
