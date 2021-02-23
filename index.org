@@ -363,3 +363,97 @@ while GameEnd == False:
       print("draw")
 
 #+end_src
+
+
+
+* Python Extension Exercises - Part 2
+
+** Creating a program which asks the user to type in a a sort
+a. Assign this value to a variable called sport.
+b. If the sport is football, output "The beautiful game"
+c. If the sport is ice hockey, output "The violent game"
+d. If the sport is rugby, output "The game of egg chasers"
+e. If the sport is basketball, output "Netball for men"
+f. Else output "what sport do you like then"
+
+#+begin_src python
+
+sport = input("Type in a sport: ")
+
+if sport == "football":
+    print("The beautiful game")
+elif sport == "ice hockey":
+    print("The violent game")
+elif sport == "rugby":
+    print("The game of egg chasers")
+elif sport == "basketball":
+    print("Netball for men")
+else:
+    print("What sport do you like then")
+
+
+#+end_src
+
+
+** Create a program which asks the user to input two integers (store these values in two variables called x and y) and a mathematical operator (+, -, / or *) and store this in a variable called operator.
+a. IF the operator is a + symbol, output the value of x + y
+b. IF the operator is a - symbol, output the value of x - y
+c. IF the operator is a * symbol, output the value of x * y
+d. ELSE output the value of x / y
+
+#+begin_src python
+
+print("enter x")
+x = int(input())
+
+print("enter y")
+y = int(input())
+
+print("enter an operator, + - * or / only")
+operator = input()
+
+if operator == "+":
+    print(x, "+", y, "=", x+y)
+elif operator == "-":
+    print(x, "+", y, "=", x-y)
+elif operator == "*":
+    print(x, "*", y, "=", x*y)
+elif operator == "/":
+    print(x, "/", y, "=", x/y)
+
+#+end_src
+
+
+** Create a program which asks the user to enter an amount in £ - store this value in a variable called amount.
+a. Ask the user for a currency to exchange the amount to ($, Yen, Euros or NZ $) – store this in a variables called exchange.
+b. IF the exchange variable is $ then output the amount multiplied by 1.5
+c. IF the exchange variable is Yen then output the amount multiplied by 20
+d. IF the exchange variable is Euros then output the amount multiplied by 1.3
+e. IF the exchange variable is NZ $ then output the amount multiplied by 2
+f. ELSE output “we don’t exchange this currency”
+
+#+begin_src python
+
+print("ENTER AMOUNT IN POUNDS")
+poundValue = int(input())
+
+print("WHICH CURRENCY DO YOU WISH TO CONVERT TO")
+currency = input("ENTER Dollar, Yen, Euro, or NZ")
+
+if currency == "Dollar":
+    op = 1.5
+elif currency == "Yen":
+    op = 20
+elif currency == "Euro":
+    op = 1.3
+elif currency == "NZ":
+    op = 2
+else:
+    print("We don't trade this currency")
+
+
+print("YOUR NEW BALANCE IS: ", poundValue * op)
+
+
+
+#+end_src
