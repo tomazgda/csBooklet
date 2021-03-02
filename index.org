@@ -369,7 +369,7 @@ while GameEnd == False:
 * Python Extension Exercises - Part 2
 
 ** 1
-*** Creating a program which asks the user to type in a a sort
+Creating a program which asks the user to type in a a sort
 a. Assign this value to a variable called sport.
 b. If the sport is football, output "The beautiful game"
 c. If the sport is ice hockey, output "The violent game"
@@ -397,7 +397,7 @@ else:
 
 
 ** 2
-*** Create a program which asks the user to input two integers (store these values in two variables called x and y) and a mathematical operator (+, -, / or *) and store this in a variable called operator.
+Create a program which asks the user to input two integers (store these values in two variables called x and y) and a mathematical operator (+, -, / or *) and store this in a variable called operator.
 a. IF the operator is a + symbol, output the value of x + y
 b. IF the operator is a - symbol, output the value of x - y
 c. IF the operator is a * symbol, output the value of x * y
@@ -427,7 +427,7 @@ elif operator == "/":
 
 
 ** 3
-*** Create a program which asks the user to enter an amount in £ - store this value in a variable called amount.
+Create a program which asks the user to enter an amount in £ - store this value in a variable called amount.
 a. Ask the user for a currency to exchange the amount to ($, Yen, Euros or NZ $) – store this in a variables called exchange.
 b. IF the exchange variable is $ then output the amount multiplied by 1.5
 c. IF the exchange variable is Yen then output the amount multiplied by 20
